@@ -151,3 +151,76 @@
     left: 78px;
     top: -4px;
 }
+
+/* Second Card */
+.car-2{
+    width: 400px;
+    position: absolute;
+    left: 0%;
+    transform: translateX(-100%);
+    bottom: 40px;
+
+    z-index: 2;
+
+}
+.car-2 img{
+    width: 100%;
+    animation: car-2 1s linear infinite, car-2-moving 5s linear infinite;
+}
+
+@keyframes car-2 {
+    100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes car-2-moving {
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+
+.wheel-2{
+    position: absolute;
+    left:-10%;
+    transform: translateX(-100%);
+    bottom: 200px;
+
+    z-index: 2;
+}
+.wheel-2 img{
+    width: 75px;
+    height: 75px;
+    animation: wheel-2 1.5s linear infinite, wheel-2-moving 5s linear infinite;
+}
+
+@keyframes wheel-2 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wheel-2-moving {
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+.left-wheel-2{
+    position: absolute;
+    left:-212px;
+    top: 77px;
+}
+
+.right-wheel-2{
+    position: absolute;
+    left: 31px;
+    top: 77px;
+}
